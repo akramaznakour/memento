@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.loading.LoadingFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="@string/screen_loading_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xl" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loader_lottie_animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:maxWidth="@dimen/lottie_size"
+            android:maxHeight="@dimen/lottie_size"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/screen_loading_subtitle"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="#636363"
+        android:textSize="@dimen/text_md" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="@string/screen_loading_author_credit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_md" />
+</androidx.appcompat.widget.LinearLayoutCompat>

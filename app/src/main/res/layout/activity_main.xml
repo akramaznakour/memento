@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/parent_container"
+        class="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="@dimen/elevation"-->
+<!--        style="@style/main_bottom_navigation_view_style"-->
+<!--        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"-->
+<!--        app:itemTextAppearanceInactive="@style/BottomNavigationView"-->
+<!--        app:itemTextColor="@color/bottom_navigation_item_color"-->
+<!--        app:menu="@menu/bottom_navigation_menu" />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

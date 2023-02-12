@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- space -->
+    <dimen name="space_0">0dp</dimen>
+    <dimen name="space_2">8dp</dimen>
+    <dimen name="space_4">16dp</dimen>
+    <dimen name="space_10">60dp</dimen>
+
+    <!-- text -->
+    <dimen name="text_xm">10sp</dimen>
+    <dimen name="text_sm">14sp</dimen>
+    <dimen name="text_md">18sp</dimen>
+    <dimen name="text_lg">32sp</dimen>
+    <dimen name="text_xl">60sp</dimen>
+
+    <!-- elevation -->
+    <dimen name="elevation">4dp</dimen>
+
+    <!-- radius -->
+    <dimen name="radius">8dp</dimen>
+
+    <!-- lottie -->
+    <dimen name="lottie_size">100dp</dimen>
+
+</resources>

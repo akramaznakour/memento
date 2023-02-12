@@ -1,0 +1,90 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.aghmat.memento"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.aghmat.memento"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        coreLibraryDesugaringEnabled true
+    }
+
+}
+
+dependencies {
+
+    def navigation_version = "2.5.3"
+    def legacy_support_version = "1.0.0"
+    def lifecycle_version = "2.5.1"
+    def desugar_version = "1.2.2"
+    def appcompat_version = "1.6.0"
+    def material_version = "1.8.0"
+    def constraint_layout_version = "2.1.4"
+    def commons_text_version = "1.8"
+    def commons_collections4_version = "4.4"
+    def rx_java_version = "2.2.21"
+    def rx_android_version = "2.1.1"
+    def room_version = "2.5.0"
+    def retrofit_version = "2.9.0"
+    def gson_converter_version = "2.9.0"
+    def logging_interceptor_version = "5.0.0-alpha.2"
+    def scalars_converter_version = "2.9.0"
+    def paging_version = "3.1.1"
+    def lottie_version = "3.4.0"
+    def junit_version = "4.13.2"
+    def test_ext_junit_version = "1.1.5"
+    def espresso_core_version = "3.5.1"
+    def work_version = "2.8.0"
+
+    implementation "androidx.navigation:navigation-fragment:$navigation_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugar_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "org.apache.commons:commons-text:$commons_text_version"
+    implementation "org.apache.commons:commons-collections4:$commons_collections4_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+    implementation "androidx.work:work-rxjava2:$work_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$gson_converter_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$scalars_converter_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-rxjava2:$paging_version"
+    implementation "com.airbnb.android:lottie:$lottie_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$test_ext_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core_version"
+}

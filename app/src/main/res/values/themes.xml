@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="Theme.Memento" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:windowBackground">#303030</item>
+        <item name="android:background">#000000</item>
+        <item name="android:textColorSecondary">#b0b0b0</item>
+    </style>
+</resources>

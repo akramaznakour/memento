@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Memento</string>
+
+    <string name="general_buttons_save">Save</string>
+
+    <string name="general_validation_error_invalid_date">Invalid date</string>
+    <string name="general_validation_is_required">is required</string>
+    <string name="general_validation_is_invalid">is invalid</string>
+
+    <string name="bottom_navigation_account">Account</string>
+    <string name="bottom_navigation_main">Main</string>
+
+    <string name="screen_loading_header">Memento.</string>
+    <string name="screen_loading_subtitle">crafted with love</string>
+    <string name="screen_loading_author_credit">\@aghmat</string>
+
+    <string name="screen_account_header">Account</string>
+    <string name="screen_account_year_field">year</string>
+    <string name="screen_account_month_field">month</string>
+    <string name="screen_account_day_field">day</string>
+    <string name="screen_account_life_expectancy_field">life expectancy</string>
+    <string name="screen_account_dates_field">dates</string>
+    <string name="screen_account_account_created_successfully">Account created successfully</string>
+    <string name="screen_account_error_creating_account">error creating account</string>
+    <string name="screen_account_error_invalid_life_expectancy">Life expectancy must be greater than 0</string>
+
+    <string name="screen_main_age_header">Age: %s, %s, %s</string>
+    <plurals name="screen_main_years_count">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="screen_main_months_count">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="screen_main_days_count">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
+    <string name="screen_year_details_year_header">Year %d</string>
+
+    <string name="screen_week_details_week_header">Year %d week %d</string>
+</resources>
